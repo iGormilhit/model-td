@@ -1,0 +1,34 @@
+% preambule
+
+\documentclass[11pt,a4paper]{article}
+% classe, format, police : il est possible de préciser 'oneside'(recto) ou 'twoside' (recto-verso)
+
+\usepackage{fontspec} % utile pour une typographie avancée
+	\setmainfont{Arial} % police Arial (doit être installée sur la machine hôte)
+\usepackage{xunicode} % gère l'unicode (utf-8)
+\usepackage{polyglossia} % gestion des documents avec plusieurs langues
+\usepackage{url}
+	\setmainlanguage{french} % configure la langue principale
+\usepackage{csquotes} % guillemets français
+
+
+\usepackage[a4paper]{geometry} % pour configurer les marges de la page
+	\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=3.5cm,rmargin=2.5cm}	% les marges
+	\setlength{\parskip}{9pt} % espacement vertical entre les paragraphes
+	\setlength{\parindent}{0pt} % intendation de la première ligne des paragraphes
+\renewcommand{\baselinestretch}{1.5} % modification de l'interligne
+
+\usepackage{titling} % récupère les métadonnées pour les réutiliser
+\usepackage{enumerate} % gère les listes à puces ou numérotées
+\usepackage{enumitem}
+\usepackage{fancyhdr} % configuration de l'en-tête
+	\pagestyle{fancy} % configuration de l'en-tête (style)
+% \usepackage{latexsym} % symboles : ajoute des symboles supplémentaires (optionnel)
+\usepackage{float} % figures flottantes : voir https://fr.wikibooks.org/wiki/LaTeX/%C3%89l%C3%A9ments_flottants_et_figures
+\usepackage{graphicx} % permet l'ajout de toute sortes d'images (y compris .EPS)
+\usepackage{titlesec} % pour gérer les titres de section
+\usepackage{titletoc}
+\usepackage{caption} % pour les légendes
+\usepackage{setspace} % pour l'interligne
+\usepackage{array} % pour les largeur de colonnes, également pour les tableaux
+\usepackage{hyperref}

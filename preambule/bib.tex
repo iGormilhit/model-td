@@ -1,0 +1,20 @@
+% ------------------------------------------------------------------------------
+% Bibliography style
+% ------------------------------------------------------------------------------ 
+
+\usepackage[backend=biber, citestyle=authoryear-ibid, bibstyle=authortitle-ibid]{biblatex} 
+\DeclareBibliographyCategory{cited}
+\AtEveryCitekey{\addtocategory{cited}{\thefield{entrykey}}}
+%\DeclareLanguageMapping{french}{french} %Pour une bibliographie ISO-690-2 (essayer avec et sans...)
+\bibliography{bib/000bibBook, bib/000bibWeb, bib/000bibArticles} %donc toute ma biblio est dans le fichier bib
+%\defbibheading{bibliography}{\huge{\textbf{Bibliographie}}}
+\renewcommand*{\mkibid}{\emph} % ibid en italique (par défaut pas en italique)
+\setlength \bibhang{9pt} %Intendation pour bibliographie
+
+
+\DeclareBibliographyCategory{badbreaks} %problème avec le lien du livre morison_role_1998 car l'url le dernier caractere de l'url se met à la ligne suivante donc la solution est :
+\addtocategory{badbreaks}{morison_role_1998}
+\AtEveryBibitem{%
+  \ifcategory{badbreaks}
+    {\mathchardef\UrlBreakPenalty=10000\relax}
+    {}}

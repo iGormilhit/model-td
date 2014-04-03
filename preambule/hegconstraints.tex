@@ -1,0 +1,34 @@
+% ------------------------------------------------------------------------------
+% Various HEG constraint
+% ------------------------------------------------------------------------------ 
+
+\titlelabel{\thetitle.\quad}
+
+\newcommand*\styleGauche{%
+  \titleformat*{\section}{\huge \bfseries}%
+}
+
+\newcommand*\styleCenter{%
+  \titleformat*{\section}{\huge \bfseries \center}%
+}
+
+\AtBeginDocument{
+  \def\labelitemii{\(\circ\)}
+  \def\labelitemiii{\(\Box\)}
+}
+
+
+% ------------------------------------------------------------------------------
+% Custom figure & tablename
+% ------------------------------------------------------------------------------ 
+
+\titlecontents{figure}[0pt]{}{Figure \thecontentslabel\kern0.5em}{}{\dotfill\thecontentspage}
+\titlecontents{table}[0pt]{}{Tableau \thecontentslabel\kern0.5em}{}{\dotfill\thecontentspage}
+
+\renewcommand\figurename{Figure}
+\renewcommand\tablename{Tableau}
+
+\captionsetup[figure]{labelsep=newline, font=bf}
+\addto\captionsfrench{\def\figurename{{Figure}}}
+\captionsetup[table]{labelsep=newline, font=bf}
+\addto\captionsfrench{\def\tablename{{Tableau}}}

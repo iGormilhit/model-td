@@ -4,24 +4,28 @@
 % 2014-03-24_template_td.tex
 % version 0.1
 
-% Préambule
+% Préambule : ajout de différents fichiers comprenants les éléments du préambule
 
-\documentclass[11pt, a4paper]{article}			% il est possible de préciser 'oneside'(recto) ou 'twoside' (recto-verso)
+	\input{preambule/preambule}				% éléments de base et packages utilisés
+	\input{preambule/bib}						% bibliographie
+	%\input{preambule/customtoc}				% table des matières adaptée
+	\input{preambule/footerheader}				% en-têtes et pied-de page
+	\input{preambule/hegconstraints}			% différentes contraintes
+	%\input{preambule/metadata}
 
-\usepackage{fontspec}							% utile pour une typographie avancée
-\usepackage{xunicode}							% gère l'unicode (utf-8)
-\usepackage{polyglossia}						% gestion des documents avec plusieurs langues
 
-\setmainlanguage{french}						% configure la langue principale
 
 \begin{document}
 
-\title{Travail de diplôme}						% indiquer le titre de votre travail
-\author{Votre nom ou vos noms}
-\date{}											% vide, ce sera la date de la compilation. Sinon, entrer la date
+	% intégration des différentes sections :
 
-\maketitle
-\titlepage										% afin d'obtenir une page de titre indépendante
+	\input{includes/001-titre}					% page de titre
+	\input{includes/002-declaration}				% déclaration
+	\input{includes/003-remerciements}			% remerciements
+	\input{includes/004-resume}				% résumé et mots clés éventuels
+	\input{includes/005-toc}					% table des matières (table of content, toc)
+	\input{includes/006-intro}
+
 
 
 

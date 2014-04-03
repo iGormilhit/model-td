@@ -1,0 +1,25 @@
+\newpage
+
+\tableofcontents{}
+%\addcontentsline{toc}{section}{Tables des matières}
+
+
+\newpage
+
+\begin{minipage}[t]{1\columnwidth}%
+
+\renewcommand\listfigurename{Liste des tableaux}
+\listoftables
+\addcontentsline{toc}{section}{Liste des tableaux}
+
+\renewcommand\listfigurename{Liste des figures}
+\listoffigures
+\addcontentsline{toc}{section}{Liste des figures}
+
+\end{minipage}
+
+
+\styleGauche
+
+\cleardoublepage%cuz issue @preamble
+\pagenumbering{arabic} %cuz issue @preamble

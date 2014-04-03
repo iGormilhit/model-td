@@ -1,0 +1,23 @@
+
+% ------------------------------------------------------------------------------
+% Selon TdM HEG
+% ------------------------------------------------------------------------------ 
+
+
+\renewcommand\l@section[2]{%
+  \ifnum \c@tocdepth >\z@
+    \addpenalty\@secpenalty
+    \addvspace{6pt \@plus\p@}%
+    \setlength\@tempdima{1.6em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode {\bfseries
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1}\nobreak\ 
+      \leaders\hbox{$\m@th\mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}
+     \hfil \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+    \endgroup
+  \fi}
+  
