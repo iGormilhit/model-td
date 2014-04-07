@@ -18,10 +18,12 @@ des sources autres que celles citées dans la bibliographie.} \vspace{3cm}
 
 \noindent \begin{flushright}
 \begin{tabular}{l}
-Fait à <lieu>, le \today{}\tabularnewline
-<Votre prénom> \textsc{<Votre Nom>}\tabularnewline
-\tabularnewline
-<Votre signature>		% Supprimer cette ligne et remplacer-là par la signature
+	\makeatletter		% permet d'utiliser la commande \@author
+		Fait à <indiquez le lieu>, le \today{}\tabularnewline
+		\@author\tabularnewline
+		\tabularnewline
+		<Votre signature>		% Supprimez cette ligne et remplacez-là par la signature
+	\makeatother
 \end{tabular}
 \par\end{flushright}
 
