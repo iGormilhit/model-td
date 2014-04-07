@@ -1,0 +1,13 @@
+% -----------------------------------------
+% fichier preambule/quotation.tex
+% redéfinir le style de la citation longue
+% voir ROUQUETTE, Maïeul, 2012. (Xe)LaTeX appliqué aux sciences humaines [en ligne]. Atramenta. Atramenta, pp. 200. ISBN 9789522730732. 
+% Disponible à l’adresse : http://mirrors.ctan.org/info/latex-sciences-humaines.pdf 
+% -----------------------------------------
+
+\let\oldquotation\quotation
+\let\endoldquotation\endquotation
+\renewenvironment{quotation}
+{\begin{oldquotation}\singlespace}
+{\end{oldquotation}}
+
