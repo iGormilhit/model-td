@@ -2,7 +2,7 @@
 % En tete et pied de page HEG
 % ------------------------------------------------------------------------------ 
 
-
+\makeatletter
 \pagenumbering{roman}
 %\let\myTABLES\listoffigures
 %\renewcommand\listoffigures{%
@@ -15,10 +15,11 @@
 \fancyhead[RO]{} %\rightmark
 \fancyhead[LE]{}
 \fancyhead[RE]{} %\rightmark
-\fancyfoot[LO,RE]{<Votre titre>\\ <Votre prénom> \textsc{<Votre nom>}}
+\fancyfoot[LO,RE]{\@title \\ \@author}
 \fancyfoot[LE,RO]{\thepage}
 \fancyfoot[CE,CO]{}
 
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand\footrulewidth{0.5pt}
 \renewcommand\footrule{\hrule\kern0.5pt\hrule\kern6.0pt}
+\makeatother
