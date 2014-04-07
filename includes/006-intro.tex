@@ -14,7 +14,6 @@ Les titres suivants ne sont pas numérotés et sont centrés : déclaration, rem
 
 Tous les éléments entourés de crochets < > doivent être modifiés ou effacés et tous les crochets doivent être supprimés. Le premier fichier à modifier est \texttt{metadata.tex} dans le répertoire \texttt{preambule/}. Vous pouvez y indiquer le titre de votre travail, ainsi que votre Prénom et votre Nom. Dans le cas d'un travail à plusieurs, entrez les noms de tous les auteurs. Ces éléments sont repris à la page de la déclaration et dans les pieds de page.
 
-
 Pour les listes à puces, utilisez l'environnement \texttt{itemize} :
 
 \begin{itemize}[itemsep=0pt]
@@ -29,42 +28,52 @@ Pour les listes à puces, utilisez l'environnement \texttt{itemize} :
 
 Pour les listes numérotées, utiliser de manière similaire l'environnement \texttt{enumerate}.
 
-Lorsque vous commencer une nouvelle section de niveau 1, faites-le sur une nouvelle page, grâce à la commande \verb?\newpage?.
+Lorsque vous commencer une nouvelle section de niveau 1, faites-le sur une nouvelle page, grâce à la commande \verb?\newpage?. Cette commande est nécessaire parce que dans ce modèle seules les sections sont utilisées, et non pas les parties et les chapitres.
 
-Faites attention à la cohérence dans la numérotation des pages. Avant l'introduction, les pages sont numérotées en chiffres romains. A partir de l'introduction, la numérotation reprend à 1 en chiffres arabes et doit être continue sur tout le document, y compris dans les annexes.
+Faites attention à la cohérence dans la numérotation des pages. Avant l'introduction, les pages sont numérotées en chiffres romains. À partir de l'introduction, la numérotation reprend à 1 en chiffres arabes et doit être continue sur tout le document, y compris dans les annexes.
 
 Pour les figures, insérez-les sur le modèle ci-dessous. N'oubliez pas la commande \verb?\caption{}? pour insérer la légende. Intégrer la source dans la légende.
 
 \begin{figure}[H]
 	\noindent \begin{centering}
-	\caption{Titre de la figure}
-	\bigskip{}
-		\includegraphics{images/image3.png}\bigskip{}
-	\par\end{centering}
+		\caption{Titre de la figure}
+		\bigskip{}
+			\includegraphics{images/image3.png}\bigskip{}
+	\par \end{centering}
 	\noindent \begin{raggedleft}
 		Source: (Bertholet 2004, p. 22) % possibilité d'intégrer une référence avec BibTex
-	\par\end{raggedleft}
+	\par \end{raggedleft}
 \end{figure}
 
 Procédez de manière similiare avec un tableau :
 
-\begin{table}
+\begin{table}[H]
 	\noindent \begin{centering}
 	\caption{Titre du tableau}
 	\bigskip{}
-		\begin{tabular}[h]{|c|c|m{0.2\textwidth}|}
+		\begin{tabular}{|m{0.2\textwidth}|m{0.2\textwidth}|m{0.4\textwidth}|}
 			\hline
-			Année & Ventes & Commandes \\
+			\textbf{Année} & \textbf{Ventes} & \textbf{Commandes} \\
 			\hline
-			Truc & Truc & Truc \\
+			 &  &  \\
 			\hline
-			Truc & Truc & Truc \\
+			 &  &  \\
 			\hline
 		\end{tabular}
+		\bigskip{}
 	\par\end{centering}
 	\noindent \begin{raggedleft}
 		Source: (Bertholet 2004, p. 22) % possibilité d'intégrer une référence avec BibTex
 	\par\end{raggedleft}
 \end{table}
 
-\addcontentsline{toc}{section}{Introduction}
+Les notes en bas de page\footnote{Note de bas de page} servent à commenter un point. La fonction des notes de bas de page est de commenter un point, et non pas de donner une référence bibliographique.
+
+Les citations courtes sont insérée à l'intérieur d'un paragraphe, encadrée par des "guillemets". La citation, comme la paraphrase, doit être suivie d'une parenthèse comprenant l'auteur et la date de la publication, ainsi que le numéro de la page d'où est tirée la partie citée ou paraphrasée : \enquote{Ceci est une citation courte, à l'intérieur d'un paragraphe.}(Auteur, 2010, p. 54). Lorsque la citation est longue, elle fait l'objet d'un paragraphe qui lui est propre, avec une mise en forme adaptée.
+
+\begin{quote}
+	Une citation peut se faire de deux manières : dans le corps du propos, elle est alors normalement entourée de guillemets, ou bien dans un paragraphe spécifique. Elle est alors	généralement présentée avec des marqueurs typographiques particuliers : changement de la taille de police, de la marge etc.
+\end{quote}
+
+Votre texte...
+
