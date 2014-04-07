@@ -1,65 +1,59 @@
-% ------------------------------------------------------------------------------
-% Title
-% ------------------------------------------------------------------------------    
- 
+% Titre
 
-\title{\textbf{\Huge <Titre du travail>}\\
-\textbf{<Sous-titre>}}
+\makeatletter	% permet d'utiliser les commandes \@ pour reprendre les données du fichier metadata.tex
+	\begin{titlepage}
 
+		\begin{figure}[H]
+			\includegraphics[width=5cm]{images/heg-logo.eps}
+		\end{figure}
+	
+		\begin{center}
+			
+			{\LARGE \textbf{\@title}} \\
 
-\date{}	% Ne pas afficher la date
+			\vspace{1cm}
+			
+			<Logo de l'entreprise, si désiré>\\	% supprimer les lignes non nécessaires le cas échéant
+			
+			\vspace{.2cm}
+			
+			\includegraphics[width=2cm]{images/logo-mandant.png}
+			
+			\vspace{1cm}
+			\vfill
+		
+			{\large < S'IL Y A LIEU, ajouter la mention suivante >}
+				\textbf{\Large{ \textsc{ \underline{< Travail strictement confidentiel >}}}}\\
 
-\begin{figure}[H]
-\includegraphics[width=4cm]{images/heg-logo.eps}
-\end{figure}
+			\vspace{2cm}
 
-\maketitle
-\vspace{0cm}
+			\textbf{Travail de <Bachelor/Master> réalisé en vue de l’obtention du <Bachelor/Master> HES}\\
+				par\textbf{\,}:\\
+				{\large \@author} \\
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=2cm]{images/logo-mandant.png}		% Insérer le logo de votre mandant éventuel ici. Gérer la taille.
-	\end{center}
-\end{figure}
+			\vspace{1cm}
+      \vfill
 
-\noindent
-	\begin{center}
-		< S'IL Y A LIEU, ajouter la mention suivante >\\
-		\textbf{\Large{ \textsc{ \underline{< Travail strictement confidentiel >}}}}
-	\end{center}
-\par
+			Conseiller au travail de <Bachelor / Master>\,:\\
+				\textbf{\Large{} <Prénom> \textsc{<Nom>}, <titre de la personne>}\\
 
-\noindent \begin{center}
-\textbf{Travail de <Bachelor / Master> réalisé en vue de l’obtention du <Bachelor / Master>
-HES}\\
-par\textbf{\,}:
-\par\end{center}
-\noindent \begin{center}
-\textbf{\Large <Votre prénom> \textsc{<Votre nom>}}
-\par\end{center}{\Large \par}
+			\vspace{2cm}
+			\vfill		
 
-\noindent \begin{center}
-{\Large Conseiller au travail de <Bachelor / Master>\,:}\\
-\textbf{\Large{} <Prénom> \textsc{<Nom>}, <titre de la personne>}
-\par\end{center}{\Large \par}
+			\textbf{\large <Lieu>, \today{}}\\
+				\textbf{\large Haute École de Gestion de Genève (HEG-GE)}\\
+				\textbf{\large <filière>}\\
 
-%\date{\vfill{}}
+		\end{center}
 
-\noindent \begin{center}
-\textbf{\large Genève, \today{}}\\
-\textbf{\large Haute École de Gestion de Genève (HEG-GE)}\\
-\textbf{\large <filière>}
-\par\end{center}{\large \par}
-
-%\vspace{2cm}
-
-
-\begin{figure}[H]
-	\begin{flushright}
-		\includegraphics[width=4cm]{images/hes-logo.eps}
-	\end{flushright}
-\end{figure}
+ 		\vfill
+		
+			\begin{flushright}
+		 		\includegraphics[width=4cm]{images/hes-logo.eps}
+			\end{flushright}
+  
+	\end{titlepage}
+\makeatother
 
 \thispagestyle{empty}
-\styleCenter
-
+\styleCenter		% détermine le centrage des titres non-numérotés
