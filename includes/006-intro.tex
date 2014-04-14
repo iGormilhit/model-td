@@ -32,7 +32,7 @@ Lorsque vous commencer une nouvelle section de niveau 1, faites-le sur une nouve
 
 Faites attention à la cohérence dans la numérotation des pages. Avant l'introduction, les pages sont numérotées en chiffres romains. À partir de l'introduction, la numérotation reprend à 1 en chiffres arabes et doit être continue sur tout le document, y compris dans les annexes.
 
-Pour les figures, insérez-les sur le modèle ci-dessous. La commande \verb?\caption{}? sert à insérer la légende. Intégrez la source dans la légende.
+Pour les figures, insérez-les sur le modèle ci-dessous. La commande \verb?\caption{}? sert à insérer la légende. Intégrez-la source dans la légende.
 
 \begin{figure}[H]
 	\noindent \begin{centering}
@@ -41,7 +41,7 @@ Pour les figures, insérez-les sur le modèle ci-dessous. La commande \verb?\cap
 			\includegraphics{images/image3.png}\bigskip{}
 	\par \end{centering}
 	\noindent \begin{raggedleft}
-		Source: (Bertholet 2004, p. 22) % possibilité d'intégrer une référence avec BibTex
+		(\cite[22]{bertholet_livres_1890}) % citation avec BibLaTeX 
 	\par \end{raggedleft}
 \end{figure}
 
@@ -65,17 +65,17 @@ Procédez de manière similiare avec un tableau :
 		\bigskip{}
 	\par\end{centering}
 	\noindent \begin{raggedleft}
-		Source: (Bertholet 2004, p. 22) % possibilité d'intégrer une référence avec BibTex
+		(\cite[22]{bertholet_livres_1890}) % citation avec BibLaTeX
 	\par\end{raggedleft}
 \end{table}
 
 Les notes en bas de page\footnote{Note de bas de page} servent à commenter un point. La fonction des notes de bas de page est de commenter un point, et non pas de donner une référence bibliographique.
 
-Les citations courtes sont insérée à l'intérieur d'un paragraphe, encadrée par des \enquote{guillemets}, qui sont ici générés par la commande \verb?\enquote{}?. La citation, comme la paraphrase, doit être suivie d'une parenthèse comprenant l'auteur et la date de la publication, ainsi que le numéro de la page d'où est tirée la partie citée ou paraphrasée : \enquote{Ceci est une citation courte, à l'intérieur d'un paragraphe.} (Auteur, 2010, p. 54). Lorsque la citation est longue, elle fait l'objet d'un paragraphe qui lui est propre, avec une mise en forme adaptée.
+Les citations courtes sont insérée à l'intérieur d'un paragraphe, encadrée par des \enquote{guillemets}, qui sont ici générés par la commande \verb?\enquote{}?. La citation, comme la paraphrase, doit être suivie d'une parenthèse comprenant l'auteur et la date de la publication, ainsi que le numéro de la page d'où est tirée la partie citée ou paraphrasée : \enquote{Ceci est une citation courte, à l'intérieur d'un paragraphe.} (\cite[54]{bertholet_livres_1890}). Lorsque la citation est longue, elle fait l'objet d'un paragraphe qui lui est propre, avec une mise en forme adaptée.
 
 \begin{quote}
 	Une citation peut se faire de deux manières : dans le corps du propos, elle est alors normalement entourée de guillemets, ou bien dans un paragraphe spécifique. Elle est alors	généralement présentée avec des marqueurs typographiques particuliers : changement de la taille de police, de la marge etc.
-\end{quote}
+(\cite[45]{rouquette_xelatex_2012})\end{quote}
 
 La citation ci-dessus est réalisée avec la commande \verb?\begin{quote}?.
 
