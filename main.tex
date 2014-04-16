@@ -1,0 +1,38 @@
+% Essai de modèle pour les travaux de diplômes
+% Utilise XeLaTeX
+% Sur la base du livre de Maïeul Rouquette, (Xe)LaTeX appliqué aux sciences humaines
+% Template_td.tex
+% version 0.1
+
+% Préambule : ajout de différents fichiers comprenants les éléments du préambule
+
+	\input{preambule/preambule}				% éléments de base et packages utilisés
+	\input{preambule/bib}						% bibliographie
+	%\input{preambule/customtoc}				% table des matières adaptée
+	\input{preambule/footerheader}				% en-têtes et pied-de page
+	\input{preambule/hegconstraints}			% différentes contraintes
+	\input{preambule/metadata}				% les métadonnées
+	\input{preambule/quote}					% modification de l'environnement quote
+
+
+
+\begin{document}
+
+
+	% intégration des différentes sections :
+
+	\input{includes/001-titre}					% page de titre
+	\input{includes/002-declaration}				% déclaration
+	\input{includes/003-remerciements}			% remerciements
+	\input{includes/004-resume}				% résumé et mots clés éventuels
+	\input{includes/005-toc}					% table des matières (table of content, toc)
+	\input{includes/006-intro}					% introduction
+	\input{includes/1-chapitre1}				% premier chapitre
+	\input{includes/2-chapitre2}				% second chapitre
+	\input{includes/100-conclusion}				% conclusion
+	\input{includes/110-bibliographie}			% bibliographie
+	\input{includes/200-annexe1}				% annexe 1
+
+
+
+\end{document}
