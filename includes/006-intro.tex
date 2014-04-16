@@ -8,11 +8,11 @@
 
 \section{Introduction}
 
-La mise en page du rapport de travail de Bachelor/Master comprend une marge de 2,5 cm en haut et en bas, ainsi qu’à droite. À gauche, une marge de 3,5 cm est requise pour permettre la reliure. La classe utilisée est \emph{article}, avec la police Arial 11 points et un espacement au-dessus des paragraphes de 9 pt. Le retrait au début du paragraphe est nul. Ces éléments sont renseignés dans le fichier \texttt{preamblule.tex} du répertoire \texttt{preambule/}.
+La mise en page du rapport de travail de Bachelor/Master comprend une marge de 2,5 cm en haut et en bas, ainsi qu’à droite. À gauche, une marge de 3,5 cm est requise pour permettre la reliure. La classe utilisée est \emph{article} et un espacement au-dessus des paragraphes de 9 pt. Le retrait au début du paragraphe est nul. Ces éléments sont renseignés dans le fichier \texttt{preamblule.tex} du répertoire \texttt{preambule/}.
 
 Les titres suivants ne sont pas numérotés et sont centrés : déclaration, remerciements, résumé, liste des tableaux, liste des figures, bibliographie, annexes. Il faut utiliser l'astérisque (*) pour l'indiquer.
 
-Tous les éléments entourés de crochets < > doivent être modifiés ou effacés et tous les crochets doivent être supprimés. Le premier fichier à modifier est \texttt{metadata.tex} dans le répertoire \texttt{preambule/}. Vous pouvez y indiquer le titre de votre travail, ainsi que votre prénom et votre nom. Dans le cas d'un travail à plusieurs, entrez les noms de tous les auteurs. Ces éléments sont repris à la page de la déclaration et dans les pieds de page.Par contre, il est nécessaire d'entrer votre Prénom et votre Nom dans le fichier \texttt{001-titre.tex} du répertoire \texttt{includes}.
+Tous les éléments entourés de crochets < > doivent être modifiés ou effacés et tous les crochets doivent être supprimés. Le premier fichier à modifier est \texttt{metadata.tex} dans le répertoire \texttt{preambule/}. Vous pouvez y indiquer le titre de votre travail, ainsi que votre prénom et votre nom. Dans le cas d'un travail à plusieurs, entrez les noms de tous les auteurs. Ces éléments sont repris à la page de la déclaration et dans les pieds de page. Par contre, il est nécessaire d'entrer votre prénom et votre nom dans le fichier \texttt{001-titre.tex} du répertoire \texttt{includes}.
 
 Pour les listes à puces, utilisez l'environnement \texttt{itemize} :
 
@@ -28,7 +28,7 @@ Pour les listes à puces, utilisez l'environnement \texttt{itemize} :
 
 Pour les listes numérotées, utiliser de manière similaire l'environnement \texttt{enumerate}.
 
-Lorsque vous commencer une nouvelle section de niveau 1, faites-le sur une nouvelle page, grâce à la commande \verb?\newpage?. Cette commande est nécessaire parce que dans ce modèle seules les sections sont utilisées, et non pas les parties et les chapitres.
+Lorsque vous commencer une nouvelle section de niveau 1, faites-le sur une nouvelle page, grâce à la commande \verb?\newpage?. Cette commande est nécessaire, car dans ce modèle seules les sections sont utilisées, et non pas les parties et les chapitres.
 
 Faites attention à la cohérence dans la numérotation des pages. Avant l'introduction, les pages sont numérotées en chiffres romains. À partir de l'introduction, la numérotation reprend à 1 en chiffres arabes et doit être continue sur tout le document, y compris dans les annexes.
 
@@ -69,13 +69,13 @@ Procédez de manière similiare avec un tableau :
 	\par\end{raggedleft}
 \end{table}
 
-Les notes en bas de page\footnote{Note de bas de page} servent à commenter un point. La fonction des notes de bas de page est de commenter un point, et non pas de donner une référence bibliographique.
+Les notes en bas de page\footnote{Note de bas de page} servent à commenter un point. La fonction des notes de bas de page n'est pas de donner une référence bibliographique.
 
 Les citations courtes sont insérée à l'intérieur d'un paragraphe, encadrée par des \enquote{guillemets}, qui sont ici générés par la commande \verb?\enquote{}?. La citation, comme la paraphrase, doit être suivie d'une parenthèse comprenant l'auteur et la date de la publication, ainsi que le numéro de la page d'où est tirée la partie citée ou paraphrasée : \enquote{Ceci est une citation courte, à l'intérieur d'un paragraphe.} (\cite[54]{bertholet_livres_1890}). Lorsque la citation est longue, elle fait l'objet d'un paragraphe qui lui est propre, avec une mise en forme adaptée.
 
-\begin{quote}
-	Une citation peut se faire de deux manières : dans le corps du propos, elle est alors normalement entourée de guillemets, ou bien dans un paragraphe spécifique. Elle est alors	généralement présentée avec des marqueurs typographiques particuliers : changement de la taille de police, de la marge etc.
-(\cite[45]{rouquette_xelatex_2012})\end{quote}
-
 La citation ci-dessus est réalisée avec la commande \verb?\begin{quote}?.
+
+\begin{quote}
+	Une citation peut se faire de deux manières : dans le corps du propos, elle est alors normalement entourée de guillemets, ou bien dans un paragraphe spécifique. Elle est alors	généralement présentée avec des marqueurs typographiques particuliers : changement de la taille de police, de la marge etc. (\cite[45]{rouquette_xelatex_2012})\end{quote}
+
 
