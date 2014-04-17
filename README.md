@@ -6,8 +6,13 @@ Il a été réalisé sur la base du modèle Word et LibreOffice actuellement disponib
 
   * Une installation de TeX-live récente
   * Avoir configuré XeLaTeX
-  * Installation de BibLaTeX (ou de Biber si possible) 
+  * Installation de BibLaTeX et de Biber
+	* Avoir configuré Biber pour la composition de Bibtex
 
+
+## Documentation
+
+Pour la mise en place de certains points, notamment pour les éléments de citation, la configuration de biber, ou le processus de compilation, il est utile de s'en référer au livre de ROUQUETTE, Maïeul, 2012, indiqué dans la bibliographie.
 
 ## ShareLaTeX
 
