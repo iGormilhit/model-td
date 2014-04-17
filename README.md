@@ -1,5 +1,6 @@
-Il s'agit de construire un modèle qui serait adapté pour les travaux de diplôme dans une Haute école en Suisse. Pour l'instant, le modèle cherche à s'en tenir au modèle existant (sur Word et en OpenDocument), même s'il serait préférable d'en constituer un nouveau, de bonne qualité.
-Ce sera le cas, on l'espère, dans un deuxième temps.
+Ce projet a pour objectif de mettre à disposition des étudiantEs de la [Haute école de gestion de Genève](http://www.hesge.ch/heg/) un modèle pour la rédaction de leur travail de diplôme, que ce soit pour le bachelor ou le master.
+
+Il a été réalisé sur la base du modèle Word et LibreOffice actuellement disponible sur l'intranet de l'école. Certains point n'ont pas pu être respectés. Par exemple, la police Arial, ne permet pas les //small capitals//, or elles sont indispensables pour le style de référence bibliographique auteur-titre.
 
 ## Requis
 
